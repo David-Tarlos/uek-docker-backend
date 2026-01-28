@@ -33,4 +33,4 @@ jobs:
             script: |
               docker pull ${{ secrets.DOCKER_USERNAME }}/multi-user-backend
               cd ~
-              docker-compose up -d --no-deps backend
+              docker compose up -d --no-deps backend
