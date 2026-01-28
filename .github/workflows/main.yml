@@ -1,8 +1,10 @@
- on:
+name: Backend CI
+
+on:
     push:
       branches: [main]
 
- jobs:
+jobs:
     build:
       runs-on: ubuntu-latest
       steps:
