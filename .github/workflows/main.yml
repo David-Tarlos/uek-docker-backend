@@ -33,4 +33,4 @@ jobs:
             script: |
               docker pull ${{ secrets.DOCKER_USERNAME }}/multi-user-backend:prod
               cd ~/prod
-              docker compose up -d --no-deps backend
+              docker compose up -d --force-recreate --no-deps backend
